@@ -37,4 +37,9 @@ public class TemperatureConverterTest {
         assertEquals(0.0, converter.kelvinToCel((float)273.15), 0.001);
     }
 
+    @Test
+    public void testKelvinToFah() {
+        assertEquals(32, converter.kelvinToFah(273.15), 0.001);
+    }
+
 }
