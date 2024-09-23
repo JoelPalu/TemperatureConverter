@@ -38,4 +38,13 @@ public class TemperatureConverter {
     public static  double	kelvinToFah(double kel) {
         return Math.round((kel-273.15)* (9/5) + 32);
     }
+
+    public static void main(String[] args) {
+        TemperatureConverter converter = new TemperatureConverter();
+        System.out.println(converter.fahrenheitToCelsius(32));
+        System.out.println(converter.celsiusToFahrenheit(0));
+        System.out.println(converter.isExtremeTemperature(-50));
+        System.out.println(converter.kelvinToCel((float)273.15));
+        System.out.println(converter.kelvinToFah(273.15));
+    }
 }
